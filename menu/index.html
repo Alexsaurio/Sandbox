@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="logo">
+                <a href="#" class="nav-link">
+                    <span class="link-text">Pokemon</span>
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-right"
+                        class="svg-inline--fa fa-angle-double-right fa-w-14" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="apple-alt"
+                        class="svg-inline--fa fa-apple-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M350.85 129c25.97 4.67 47.27 18.67 63.92 42 14.65 20.67 24.64 46.67 29.96 78 4.67 28.67 4.32 57.33-1 86-7.99 47.33-23.97 87-47.94 119-28.64 38.67-64.59 58-107.87 58-10.66 0-22.3-3.33-34.96-10-8.66-5.33-18.31-8-28.97-8s-20.3 2.67-28.97 8c-12.66 6.67-24.3 10-34.96 10-43.28 0-79.23-19.33-107.87-58-23.97-32-39.95-71.67-47.94-119-5.32-28.67-5.67-57.33-1-86 5.32-31.33 15.31-57.33 29.96-78 16.65-23.33 37.95-37.33 63.92-42 15.98-2.67 37.95-.33 65.92 7 23.97 6.67 44.28 14.67 60.93 24 16.65-9.33 36.96-17.33 60.93-24 27.98-7.33 49.96-9.67 65.94-7zm-54.94-41c-9.32 8.67-21.65 15-36.96 19-10.66 3.33-22.3 5-34.96 5l-14.98-1c-1.33-9.33-1.33-20 0-32 2.67-24 10.32-42.33 22.97-55 9.32-8.67 21.65-15 36.96-19 10.66-3.33 22.3-5 34.96-5l14.98 1 1 15c0 12.67-1.67 24.33-4.99 35-3.99 15.33-10.31 27.67-18.98 37z">
+                        </path>
+                    </svg>
+                    <span class="link-text">opcion 1</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="apple-alt"
+                        class="svg-inline--fa fa-apple-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M350.85 129c25.97 4.67 47.27 18.67 63.92 42 14.65 20.67 24.64 46.67 29.96 78 4.67 28.67 4.32 57.33-1 86-7.99 47.33-23.97 87-47.94 119-28.64 38.67-64.59 58-107.87 58-10.66 0-22.3-3.33-34.96-10-8.66-5.33-18.31-8-28.97-8s-20.3 2.67-28.97 8c-12.66 6.67-24.3 10-34.96 10-43.28 0-79.23-19.33-107.87-58-23.97-32-39.95-71.67-47.94-119-5.32-28.67-5.67-57.33-1-86 5.32-31.33 15.31-57.33 29.96-78 16.65-23.33 37.95-37.33 63.92-42 15.98-2.67 37.95-.33 65.92 7 23.97 6.67 44.28 14.67 60.93 24 16.65-9.33 36.96-17.33 60.93-24 27.98-7.33 49.96-9.67 65.94-7zm-54.94-41c-9.32 8.67-21.65 15-36.96 19-10.66 3.33-22.3 5-34.96 5l-14.98-1c-1.33-9.33-1.33-20 0-32 2.67-24 10.32-42.33 22.97-55 9.32-8.67 21.65-15 36.96-19 10.66-3.33 22.3-5 34.96-5l14.98 1 1 15c0 12.67-1.67 24.33-4.99 35-3.99 15.33-10.31 27.67-18.98 37z">
+                        </path>
+                    </svg>
+                    <span class="link-text">opcion 2</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="apple-alt"
+                        class="svg-inline--fa fa-apple-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M350.85 129c25.97 4.67 47.27 18.67 63.92 42 14.65 20.67 24.64 46.67 29.96 78 4.67 28.67 4.32 57.33-1 86-7.99 47.33-23.97 87-47.94 119-28.64 38.67-64.59 58-107.87 58-10.66 0-22.3-3.33-34.96-10-8.66-5.33-18.31-8-28.97-8s-20.3 2.67-28.97 8c-12.66 6.67-24.3 10-34.96 10-43.28 0-79.23-19.33-107.87-58-23.97-32-39.95-71.67-47.94-119-5.32-28.67-5.67-57.33-1-86 5.32-31.33 15.31-57.33 29.96-78 16.65-23.33 37.95-37.33 63.92-42 15.98-2.67 37.95-.33 65.92 7 23.97 6.67 44.28 14.67 60.93 24 16.65-9.33 36.96-17.33 60.93-24 27.98-7.33 49.96-9.67 65.94-7zm-54.94-41c-9.32 8.67-21.65 15-36.96 19-10.66 3.33-22.3 5-34.96 5l-14.98-1c-1.33-9.33-1.33-20 0-32 2.67-24 10.32-42.33 22.97-55 9.32-8.67 21.65-15 36.96-19 10.66-3.33 22.3-5 34.96-5l14.98 1 1 15c0 12.67-1.67 24.33-4.99 35-3.99 15.33-10.31 27.67-18.98 37z">
+                        </path>
+                    </svg>
+                    <span class="link-text">opcion 2</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Pokemon</h1>
+        <p>Pokémon (ポケモン Pokemon?) es una franquicia de medios que originalmente comenzó como un videojuego RPG, pero
+            debido a su popularidad ha logrado expandirse a otros medios de entretenimiento como series de televisión,
+            juegos de cartas, ropa, entre otros, convirtiéndose en una marca que es reconocida en el mercado mundial.
+            Las ventas de videojuegos hasta el 1 de diciembre de 2006 habían alcanzado una cantidad de 340 millones de
+            ejemplares (incluyendo la venta de la versión Pikachu de la consola Nintendo 64),1​ logrando ocupar el
+            segundo lugar de las sagas de videojuegos más vendidos de Nintendo.2​ La franquicia celebró su décimo
+            aniversario el 27 de febrero de 2006.3​4​
+
+            La saga de videojuegos es desarrollada por la compañía programadora de software japonesa Game Freak, con
+            personajes creados por Satoshi Tajiri para la empresa de juguetes Creatures Inc., y a su vez distribuida por
+            Nintendo. La misión en estos juegos es capturar y entrenar a los pokémon (criaturas cuya denominación da
+            nombre al juego), que hasta la fecha alcanzan el número de 890. La posibilidad de intercambiarlos le hizo
+            conseguir una popularidad que se plasmó en un éxito de ventas y la consiguiente aparición de una serie
+            animada, películas y diverso merchandising como peluches, juguetes y cartas.
+
+            La producción de los videojuegos, serie de anime y demás material para su distribución en occidente fue
+            realizada en Estados Unidos por 4Kids Entertainment hasta noviembre de 2005, momento en que decidió no
+            renovar su contrato con Pokémon USA (una subsidiaria de Pokémon Company). Actualmente esta supervisa todo lo
+            referente al material de Pokémon en su distribución en occidente.5​</p>
+        <p>Pokémon (ポケモン Pokemon?) es una franquicia de medios que originalmente comenzó como un videojuego RPG, pero
+            debido a su popularidad ha logrado expandirse a otros medios de entretenimiento como series de televisión,
+            juegos de cartas, ropa, entre otros, convirtiéndose en una marca que es reconocida en el mercado mundial.
+            Las ventas de videojuegos hasta el 1 de diciembre de 2006 habían alcanzado una cantidad de 340 millones de
+            ejemplares (incluyendo la venta de la versión Pikachu de la consola Nintendo 64),1​ logrando ocupar el
+            segundo lugar de las sagas de videojuegos más vendidos de Nintendo.2​ La franquicia celebró su décimo
+            aniversario el 27 de febrero de 2006.3​4​
+
+            La saga de videojuegos es desarrollada por la compañía programadora de software japonesa Game Freak, con
+            personajes creados por Satoshi Tajiri para la empresa de juguetes Creatures Inc., y a su vez distribuida por
+            Nintendo. La misión en estos juegos es capturar y entrenar a los pokémon (criaturas cuya denominación da
+            nombre al juego), que hasta la fecha alcanzan el número de 890. La posibilidad de intercambiarlos le hizo
+            conseguir una popularidad que se plasmó en un éxito de ventas y la consiguiente aparición de una serie
+            animada, películas y diverso merchandising como peluches, juguetes y cartas.
+
+            La producción de los videojuegos, serie de anime y demás material para su distribución en occidente fue
+            realizada en Estados Unidos por 4Kids Entertainment hasta noviembre de 2005, momento en que decidió no
+            renovar su contrato con Pokémon USA (una subsidiaria de Pokémon Company). Actualmente esta supervisa todo lo
+            referente al material de Pokémon en su distribución en occidente.5​</p>
+    </div>
+</body>
+
+</html>

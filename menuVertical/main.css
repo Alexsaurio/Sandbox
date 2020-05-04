@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+:root{
+    font-size: 15px;
+    font-family: 'Roboto';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec; 
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --sizeRem: 4rem;
+    --tranform-speed: 600ms;
+}
+*{
+ margin: 0;
+}
+
+body::-webkit-scrollbar{
+    width: 0.5rem;
+}
+body::-webkit-scrollbar-track{
+    background: aliceblue;
+}
+body::-webkit-scrollbar-thumb{
+    background: #1e1e24;
+}
+.body{
+    margin: 0;
+    margin-left: var(--sizeRem);
+    padding: 1rem;
+}
+
+p{ text-align: justify; }
+
+.navbar{
+    margin: 0;
+    width: var(--sizeRem);
+    height: 100vh;
+    position: fixed;
+    background: var(--bg-primary);
+    transition: width 200ms ease;
+}
+.navbar:hover{
+    width: 14rem;
+}
+.navbar:hover .link-text{
+    display: block;
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-item{
+    width: 100%;
+}
+.nav-item:last-child {
+    margin-top: auto;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: var(--sizeRem);
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--tranform-speed);
+}
+.nav-link svg{
+    min-width: 2rem;
+    margin-left: 1rem;
+}
+.nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+.link-text{
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.svg-inline--fa{
+    color: #55ec1a;
+    transition: var(--tranform-speed);
+}
+.logo .nav-link{
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+.logo{
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.logo svg{
+    transform: rotate(0deg);
+    transition: var(--tranform-speed);
+}
+
+.navbar:hover .logo svg{
+    margin-left: 0rem!important;
+    transform: rotate(180deg);
+    padding-left: 0.75rem;
+}
+
+
+@media only screen and (max-width: 600px){
+    .navbar{
+        bottom: 0;
+        width: 100vw;
+        height: var(--sizeRem);
+    }
+    .navbar:hover{
+        width: 100vw;
+    }
+    .navbar:hover .link-text{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .navbar-nav{
+        flex-direction: row;
+    }
+    .nav-link{
+        justify-content: center;
+    }
+
+}

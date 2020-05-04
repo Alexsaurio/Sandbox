@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    font-size: 14px;
+    font-family: 'Roboto';
+    /*color fuentes*/
+    --text-primario: #b6b6b6;
+    --text-secundario: #ececec;
+    /* color de fondo */
+    --bg-primario: #303033;
+    --bg-secundario: #141418;
+    --speed-trans: 600ms;
+    --size-rem: 5rem;
+}
+*{
+    margin: 0;
+}
+
+.content{
+    margin-left: var(--size-rem);
+    padding: 1rem;
+}
+
+body::-webkit-scrollbar{
+    width: 0.5rem;
+}
+body::-webkit-scrollbar-track{
+    background: aliceblue;
+}
+body::-webkit-scrollbar-thumb{
+    background: black;
+}
+p{  text-align: justify; }
+
+.navbar{
+    margin: 0;
+    width: var(--size-rem);
+    height: 100vh;
+    background: var(--bg-primario);
+    position: fixed;
+    transition: width 200ms ease;
+}
+.navbar:hover{  width: 15rem; }
+
+.navbar-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar:hover .link-text{
+    display: block;
+}
+.nav-item{ width: 100%; }
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: var(--size-rem);
+    color: var(--text-primario);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--speed-trans);
+}
+.nav-link svg{
+    min-width: 2rem;
+    margin-left: 1rem;
+}
+
+.nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secundario);
+    color: var(--text-secundario);
+}
+.link-text{
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.svg-inline--fa{
+    color: aqua;
+    transition: var(--speed-trans);
+}
+
+.logo{
+    font-weight: bold;
+    width: 100%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.logo .nav-link{
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secundario);
+    color: var(--text-secundario);
+}
+
+.logo svg{
+    transform: rotate(0deg);
+    transition: var(--speed-trans);
+}
+
+.navbar:hover .logo svg{
+    padding-left: 0.75rem;
+    transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 600px){
+    .navbar{
+        bottom: 0;
+        width: 100vw;
+        height: var(--size-rem);
+    }
+    .content{
+        margin-left: 0;
+    }
+    .navbar:hover{
+        width: 100vw;
+    }
+    .navbar:hover .link-text{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .navbar-nav{
+        flex-direction: row;
+    }
+    .nav-link{
+        justify-content: center;
+    }
+}
+

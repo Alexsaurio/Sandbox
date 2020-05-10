@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+:root{
+    font-family: 'Inconsolata';
+    --font-title: 30px;
+}
+*{
+    margin:0;
+}
+
+#region{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: var(--font-title);
+    margin: 3rem 0;
+}
+
+#content{
+    text-align: center;
+    padding: 0% 0%;
+}
+
+#content div{
+    display: inline-block;
+    width: 120px;
+    height: 160px;
+    margin: 25px;
+    padding: 5px;
+    background-color: rgb(255, 106, 106);
+    border-radius: 5px;
+}
+#content div h3{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+#content div img{
+    width: 100%;
+    background: white;
+    display: block;
+    margin-bottom: 3px;
+    border-radius: 5px;
+}
+
+#content div span{
+    font-size: 13px;
+    margin: 9px 2px;
+    padding: 3px 5px;
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+
+/* estilos para los tipos */
+.normal{
+    background-color: #A8A090;
+}
+.flying{
+    background-color: #98A8F0;
+}
+.poison{
+    background-color: #B058A0;
+}
+.ground{
+    background-color: #9e6237;
+}
+.rock{
+    background-color: #B8A058;
+}
+.bug{
+    background-color: #A8B820;
+}
+.ghost{
+    background-color: #6060B0;
+}
+.steel{
+    background-color: #A8A8C0;
+}
+.fire{
+    background-color: #F05030;
+}
+.water{
+    background-color: #3899F8;
+}
+.grass{
+    background-color: #78C850;
+}
+.electric{
+    background-color: #F8D030;
+}
+.psychic{
+    background-color: #F870A0;
+}
+.ice{
+    background-color: #58C8E0;
+}
+.dragon{
+    background-color: #7860E0;
+}
+.dark{
+    color: white;
+    background-color: #424242;
+}
+.fairy{
+    background-color: #E79FE7;
+}
+.unknown{
+    background-color: #B8B8B8;
+}
+.shadow{
+    color: white;
+    background-color: #000000;
+}
+.fighting{
+    color: white;
+    background-color: #A05038;
+}
